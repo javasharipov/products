@@ -1,0 +1,275 @@
+/* Global Styles */
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden; /* Prevent horizontal scrolling */
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+main {
+	min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+}
+
+.navbar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.navbar ul li {
+	margin-right: 20px;
+}
+
+.navbar a {
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+}
+
+.search {
+	display: flex;
+	align-items: center;
+}
+
+.search input {
+	border: 1px solid #ddd;
+	padding: 5px 10px;
+	margin-left: 5px;
+}
+
+.openSearchBtn {
+	background: none;
+	border: none;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+/* General Product Section Styles */
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	gap: 14px;
+	align-items: center;
+	justify-content: center;
+	margin: 20px auto;
+	/* max-width: 1200px; */
+}
+
+/* Products Wrapper - Row layout */
+.products__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 20px;
+	margin-top: 20px;
+}
+
+/* Product Card */
+.products__card {
+	background: #fff;
+	border: 1px solid #e5e5e5;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	width: 250px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.products__card__image img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+.products__card__info {
+	padding: 15px;
+	text-align: center;
+}
+
+.products__card__info h3 {
+	font-size: 1.1rem;
+	margin: 10px 0;
+}
+
+.products__card__info p.price {
+	color: #a0583c;
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+.products__card__info ul {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	padding: 0;
+	margin: 10px 0;
+}
+
+.products__card__info ul li {
+	color: #fbc02d;
+	margin: 0 2px;
+}
+
+.products__card button.addCart {
+	background-color: #a0583c;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	padding: 10px;
+	margin: 10px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.products__card button.addCart:hover {
+	background-color: #81442e;
+}
+
+.loading__products {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	margin: 20px 0;
+}
+
+.loading__products__product {
+	background: #f0f0f0;
+	border-radius: 8px;
+	height: 320px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	/* overflow: hidden; */
+	width: 250px;
+}
+
+.loading__products__body {
+	padding: 10px;
+}
+
+.loading__products__image {
+	background: #ccc;
+	height: 200px;
+	width: 100%;
+}
+
+.loading__products__info h3,
+.loading__products__info p,
+.loading__products__info ul,
+button {
+	background: #ddd;
+	height: 16px;
+	margin: 8px 0;
+	border-radius: 4px;
+}
+
+button {
+	margin: 10px;
+	height: 30px;
+}
+
+.loading__category,
+.category {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 20px 0;
+}
+
+.loading__category__categorylist,
+.categorylist {
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.loading__category__coll,
+.collection {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.loading__category__coll li,
+.collection li {
+	margin-right: 15px;
+	background: #f5f5f5;
+	padding: 10px 15px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background 0.3s ease;
+}
+
+.loading__category__coll li:hover,
+.collection li:hover {
+	background: #ddd;
+}
+
+.to-left,
+.to-right,
+.previusBtn,
+.nextBtn {
+	background: none;
+	border: none;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.products,
+.loading__products {
+	margin: 20px 0;
+}
+
+.seeMoreBtn {
+	display: block;
+	margin: 20px auto;
+	padding: 10px 20px;
+	background-color: #333;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background 0.3s ease;
+}
+
+.seeMoreBtn:hover {
+	background-color: #555;
+}
+
+footer {
+	text-align: center;
+	padding: 20px 0;
+	background: #f1f1f1;
+}
+
+footer hr {
+	border: none;
+	border-top: 1px solid #ddd;
+	margin: 10px 0;
+}
+
+footer a {
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+}
+
+footer a:hover {
+	color: #555;
+}

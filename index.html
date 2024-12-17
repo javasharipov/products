@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+		integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Products</title>
+</head>
+
+<body>
+	<!-- Header -->
+	<header>
+		<div class="container">
+			<div class="navbar">
+				<ul>
+					<li><a href="#">Products</a></li>
+				</ul>
+				<button class="openSearchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+			</div>
+
+			<!-- Loading Categories -->
+			<div class="loading__category">
+				<button class="to-left"><i class="fa-solid fa-angle-left"></i></button>
+				<div class="loading__category__categorylist">
+					<ul class="loading__category__coll">
+					</ul>
+				</div>
+				<button class="to-right"><i class="fa-solid fa-angle-right"></i></button>
+			</div>
+
+			<!-- Categories -->
+			<div class="category">
+				<button class="previusBtn"><i class="fa-solid fa-angle-left"></i></button>
+				<div class="categorylist">
+					<ul class="collection">
+					</ul>
+				</div>
+				<button class="nextBtn"><i class="fa-solid fa-angle-right"></i></button>
+			</div>
+		</div>
+	</header>
+
+	<!-- Main Section -->
+	<main>
+		<!-- Product Wrapper -->
+		<div class="container">
+			<section class="products">
+				<div class="loading__products"></div>
+				<div class="products__wrapper"></div>
+			</section>
+		</div>
+
+
+		<button class="seeMoreBtn">See more</button>
+	</main>
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<hr>
+			<p><a href="https://github.com/javasharipov" target="_blank">Made by @javasharipov</a></p>
+		</div>
+	</footer>
+
+	<script src="./app.js"></script>
+</body>
+
+</html>
